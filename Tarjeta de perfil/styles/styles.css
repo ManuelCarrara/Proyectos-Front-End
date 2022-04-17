@@ -104,7 +104,18 @@ a {
 
 a:hover {
     text-decoration:underline;
+    transform: translateY(20px);
 }
+
+h1:hover {
+    transform: translateX(20px);
+}
+
+.texto-secundario {
+    transform: scale(2);
+}
+
+
 
 
 
