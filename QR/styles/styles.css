@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(212, 45%, 89%);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin-top: 13vw;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 19px;
+    color: hsl(218, 44%, 22%);
+}
+
+section p {
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 60%);
+}
+
+footer {
+    width: 70%;
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(90, 87, 255);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(218, 44%, 22%);
+    letter-spacing: 1px;
+    transition: all 1s;
+}
+
+/*Para que la animación funcione, le agregue inline-block ya que en elementos en linea no funciona*/
+a:hover {
+    text-decoration:underline;
+    display: inline-block;
+    transform: translateX(10px);
+}
+
+@media (max-width: 375px) {
+
+    section {
+        width: 78vw;
+        margin-top: 80px;
+    }
+
+    h2 {
+        margin: 1rem;
+        font-size: 23px;
+        color: hsl(218, 44%, 22%);
+    }
+
+    p {
+        margin: 0.5rem 1rem;
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
