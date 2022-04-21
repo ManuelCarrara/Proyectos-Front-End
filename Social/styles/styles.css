@@ -1,0 +1,165 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 80vw;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h1 {
+    color:hsl(300, 43%, 22%);
+    font-size: 34px;
+}
+
+header p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5rem;
+    font-size: 17px;
+}
+
+.calificaciones {
+    text-align: center;
+    margin-top: 1rem;
+    color: hsl(300, 43%, 22%);
+    padding: 1rem 0.8rem 0.8rem 1rem;
+    background-color: hsla(302, 10%, 53%, 0.103);
+    border-radius: 0.5rem;
+}
+
+h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.reseñas {
+    background-color: hsl(300, 43%, 22%);
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#primer-reseña {
+    margin-top: 2.5rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.h4-nombre {
+    color: rgba(255, 255, 255, 0.801);
+    margin: 2rem 0 0 1.5rem;
+}
+
+.h4-verificado {
+    margin-top: 0.2rem;
+    margin-left: 1.5rem;
+    color: hsla(333, 80%, 67%, 0.774);
+    font-weight: 400;
+}
+
+article p {
+    color: rgba(255, 255, 255, 0.801);
+    margin: 0.5rem 0 1rem 1rem;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    padding: 0;
+    text-decoration: none;
+    background-color: white;
+    margin: 0;
+    transition: all 1s;
+    color: hsl(300, 43%, 22%);
+}
+
+footer p {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration:underline;
+    display: inline-block;
+    transform: translateX(10px);
+}
+
+@media (min-width: 1300px) {
+    body {
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: auto auto 100px;
+    }
+
+    header {
+        text-align: start;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-right: 12rem;
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-right: 19rem;
+        margin-top: 0.5rem;
+    }
+
+    #grid-calificaciones {
+        justify-self: center;
+    }
+
+    .calificaciones {
+        text-align: start;
+        width: 100%;
+    }
+
+
+    h5 {
+        display: inline;
+        font-size: 16px;
+        margin-left: 1.5rem;
+        position: relative;
+        bottom: 4px;
+    }
+
+    #calificaciones2 {
+        margin-left: 2.5rem
+
+    }
+
+    #calificaciones3 {
+        margin-left: 5rem;
+    }
+
+    #grid-reseñas {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+}
