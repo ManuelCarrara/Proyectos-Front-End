@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+header {
+    text-align: center;
+    margin: 4rem 2rem 0;
+}
+
+#principal {
+    color: hsl(210, 5%, 31%);
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+#secundario {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+#contenedor-cajas {
+    display: grid;
+}
+
+.cajas {
+    display: grid;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border-top: 3px solid red;
+}
+
