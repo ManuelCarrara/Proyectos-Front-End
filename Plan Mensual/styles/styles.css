@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsl(202, 33%, 89%)
+}
+
+#principal {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+
+#comunidad {
+    padding: 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: white;
+    margin-top: 5rem;
+}
+
+#comunidad h3 {
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+}
+
+#comunidad h5 {
+    margin-top: 1.5rem;
+    color: hsl(71, 73%, 54%);
+    font-size: 15px;
+}
+
+#comunidad p {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+
+#precio {
+    padding: 1.5rem;
+    background-color: hsl(179, 62%, 43%);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#precio h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#precio h2 {
+    font-size: 36px;
+    color: white;
+}
+
+#precio span {
+    margin-left: 0.5rem;
+    color: hsla(203, 44%, 93%, 0.548) ;
+}
+
+#precio p {
+    color: hsl(204, 43%, 93%);
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 40%;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    font-size: 15px;
+}
+
+#why-us {
+    padding: 1.5rem;
+    background-color: hsl(179, 53%, 59%) ;
+    color: white;
+}
+
+ul {
+    margin-top: 1.3rem;
+    font-size: 14px;
+    color: hsla(208, 100%, 97%, 0.568);
+    width: 68%;
+    line-height: 1.2rem;
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1300px) {
+    #principal {
+        grid-template-columns: 20vw 20vw;
+        grid-template-rows: auto auto;
+        margin-top: 5rem;
+    }
+
+    #comunidad {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 2.5rem;
+    }
+
+    #precio {
+        padding: 2.5rem;
+    }
+
+    button {
+        padding: 0.8rem 38%;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    #precio p {
+        font-size: 15.5px;
+    }
+
+    #why-us h3 {
+        margin-left: 1rem;
+    }
+
+    ul {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    footer a {
+        padding: 0;
+        text-decoration: none;
+        margin: 0;
+        transition: all 1s;
+        color: hsl(300, 43%, 22%);
+    }
+    
+    footer p {
+        margin: 0;
+        color: black;
+        text-align: center;
+    }
+    
+    footer a:hover {
+        text-decoration:underline;
+        display: inline-block;
+        transform: translateX(10px);
+    }
+
+}
