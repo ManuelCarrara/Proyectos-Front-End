@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+header {
+    display: grid;
+    width: 100vw;
+}
+
+#pantalla {
+    width: 80vw;
+    justify-self: center;
+    margin-top: 3.5rem;
+}
+
+#logo {
+    width: 30vw;
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    display: grid;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3.5rem;
+    color: white;
+    font-size: 26px;
+    width: 80%;
+    justify-self: center;
+}
+
+section p {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin-top: 1rem;
+    justify-self: center;
+    color: white;
+}
+
+section button {
+    width: 50%;
+    justify-self: center;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#iconos {
+    margin-top: 3.5rem;
+}
+
+.fa-brands {
+    border: solid white 1px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    margin: 0rem 0.4rem;
+    font-size: 13px;
+}
+
+.fa-facebook-f {
+    padding: 0.5rem 0.7rem;
+}
+
+#datos {
+    margin: 1rem 0rem;
+}
+footer a {
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    transition: all 1s;
+    color: hsl(300, 43%, 22%);
+}
+
+footer p {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration:underline;
+    display: inline-block;
+    transform: translateX(10px);
+}
+
+@media (min-width: 1300px) {
+
+    body {
+        background-image: url('/images/bg-desktop.svg');
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    header {
+        width: 40vw;
+        margin-left: 4rem;
+    }
+
+    #pantalla {
+        width: 50vw;
+    }
+
+    #logo {
+        width: 32%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 55%;
+        width: 40vw;
+        align-self: center;
+        justify-self: flex-start;
+        text-align: start;
+        margin-top: 4rem;
+        margin-left: 12rem;
+    }
+
+    h1 {
+        justify-self: flex-start;
+        font-size: 42px;
+        line-height: 3.5rem;
+    }
+
+    section p {
+        justify-self: flex-start;
+        font-size: 18px;
+        line-height: 1.6rem;
+    }
+
+    section button {
+        width: 30%;
+        font-size: 17.5px;
+        justify-self: flex-start;
+        padding: 1rem 4rem;
+        justify-self: flex-start;
+        border-radius: 2rem;
+        box-shadow: 0rem 0rem 0.5rem black;
+    }
+
+    footer {
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin-right: 7rem;
+    }
+
+    .fa-brands {
+        font-size: 19px;
+    }
+
+    /*Desactive el footer con la firma para que entre todo en una pantalla*/
+
+    #datos {
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+        margin: 3rem 0 1rem
+    }
+
+    footer a {
+        color: white;
+    }
+
+}
